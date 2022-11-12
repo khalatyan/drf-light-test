@@ -1,0 +1,12 @@
+.env/
+.vscode/
+/media
+/static
+/source
+/db_django
+/python
+/&&
+*.pyc
+local_settings.py
+.idea
+.DS_Store
