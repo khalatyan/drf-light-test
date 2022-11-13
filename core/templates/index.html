@@ -4,10 +4,9 @@
 {% load mptt_tags %}
 {% block content %}
 
-
-    {% for division in divisions %}
-        {{ division }}
-    {% endfor %}
+<div class="accordion" id="menu">
+    {% include 'children_divisions_list.html' with division_list=divisions %}
+</div>
 
 
 {% endblock %}
