@@ -20,6 +20,5 @@ from core import views as core_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', core_views.IndexView.as_view(), name='index_view'),
-    path('division/', core_views.DivisionViewSet.as_view(), name='division_view'),
+    path('', core_views.DivisionViewSet.as_view(), name='index_view'),
 ]

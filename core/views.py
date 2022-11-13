@@ -11,16 +11,6 @@ from core.models import Division, Post, Employee
 from core.serializers import DivisionSerializer
 
 
-class IndexView(TemplateView):
-    template_name = 'index.html'
-
-    # def get(self, request, *args, **kwargs):
-    #     if not self.request.user.is_superuser:
-    #         raise PermissionDenied()
-    #
-    #     return redirect('/roles')
-
-
 class DivisionViewSet(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'index.html'
