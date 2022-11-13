@@ -13,6 +13,7 @@ class Division(MPTTModel):
     parent = TreeForeignKey(
         'self',
         verbose_name='Родитель',
+        related_name='children',
         blank=True,
         null=True,
         on_delete=models.SET_NULL
@@ -68,6 +69,7 @@ class Employee(models.Model):
 
     division = models.ForeignKey(
         Division,
+        related_name=u'division_employee',
         verbose_name='Подразделение',
         on_delete=models.CASCADE,
         blank=False,

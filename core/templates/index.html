@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load mptt_tags %}
+{% block content %}
+
+
+    {% for division in divisions %}
+        {{ division }}
+    {% endfor %}
+
+
+{% endblock %}
